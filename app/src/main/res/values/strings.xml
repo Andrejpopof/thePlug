@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">dPlug</string>
     <string name="action_settings">Settings</string>
+    <string name="prompt">Welcome to dPlug</string>
+    <string name="content">Select below what u are looking for</string>
+    <string name="vlez"> SELECT A CATEGORY:</string>
+    <string-array name="items">
+        <item> NO CATEGORY SELECTED</item>
+        <item> HOODIES </item>
+        <item> SNEAKERS </item>
+    </string-array>
 </resources>
