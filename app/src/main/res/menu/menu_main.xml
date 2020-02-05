@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.theplug.MainActivity">
+    <item
+        android:id="@+id/settings"
+        android:orderInCategory="2"
+        android:title="@string/action_settings"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/basket"
+        android:orderInCategory="100"
+        android:title="Basket"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/basket"
+        />
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="LogOut"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/contact"
+        android:orderInCategory="1"
+        android:title="Contact us"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/profile"
+        android:orderInCategory="1"
+        android:title="Your Profile"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/profile"/>
+
+</menu>
