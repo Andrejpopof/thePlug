@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
                     keyWord="hoodies";
                     Intent intent = new Intent(MainActivity.this,Shop.class);
                     intent.putExtra("kluc",keyWord);
+                    
                     startActivity(intent);
                 }
             }
