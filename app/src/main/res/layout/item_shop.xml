@@ -10,14 +10,14 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="4dp">
+        android:layout_margin="8dp"
+        android:background="@color/Gold">
 
         <ImageView
             android:id="@+id/img"
             android:layout_width="match_parent"
             android:layout_height="250dp"
-            android:padding="2dp"
-            android:src="@color/Gold"/>
+            android:padding="2dp"/>
         <TextView
             android:id="@+id/imeProdukt"
             android:layout_width="wrap_content"
@@ -26,8 +26,9 @@
             android:layout_below="@+id/img"
             android:layout_marginTop="2dp"
             android:layout_centerHorizontal="true"
-            android:textColor="@color/purple"
+            android:textColor="@color/Gold"
             android:fontFamily="monospace"
+            android:background="@color/purple"
             />
 
         <TextView
@@ -52,9 +53,10 @@
             android:layout_below="@+id/cena"
             android:layout_marginTop="15dp"
             android:clickable="true"
-            android:textColor="@color/purple"
+            android:textColor="@color/Gold"
             android:fontFamily="monospace"
             android:layout_marginStart="3dp"
+            android:background="@color/purple"
             />
 
         <TextView
@@ -63,10 +65,11 @@
             android:text="Check Details"
             android:layout_below="@+id/cena"
             android:layout_alignParentRight="true"
-            android:textColor="@color/purple"
+            android:textColor="@color/Gold"
             android:fontFamily="monospace"
             android:layout_marginTop="15dp"
-            android:layout_marginEnd="3dp"/>
+            android:layout_marginEnd="3dp"
+            android:background="@color/purple"/>
     </RelativeLayout>
 
 

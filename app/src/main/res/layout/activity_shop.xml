@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Shop"
-    android:orientation="vertical">
+    tools:context=".Shop">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
@@ -13,9 +12,5 @@
         android:layout_height="match_parent"
         android:padding="4dp"
         android:scrollbars="vertical"
-        android:background="@drawable/pozadina2">
-    </androidx.recyclerview.widget.RecyclerView>
-
-
-
+        android:background="@drawable/pozadina2"/>
 </RelativeLayout>
