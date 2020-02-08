@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="363dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginStart="76dp"
+    android:layout_marginTop="15dp"
+    app:cardCornerRadius="4dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="0dp"
+        android:background="@color/Gold"
+        >
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:padding="2dp"
+            android:background="@color/white"/>
+        <TextView
+            android:id="@+id/imeProdukt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Name of product"
+            android:layout_below="@+id/img"
+            android:layout_marginTop="2dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/Gold"
+            android:fontFamily="monospace"
+            android:background="@color/purple"
+            />
+
+        <TextView
+            android:id="@+id/cena"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CENA"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:fontFamily="serif-monospace"
+            android:textSize="35sp"
+            android:textColor="@color/purple"
+            android:layout_below="@id/imeProdukt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/addBasket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to basket"
+            android:layout_below="@+id/cena"
+            android:layout_marginTop="15dp"
+            android:clickable="true"
+            android:textColor="@color/Gold"
+            android:fontFamily="monospace"
+            android:layout_marginStart="3dp"
+            android:background="@color/purple"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Details"
+            android:layout_below="@+id/cena"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/Gold"
+            android:fontFamily="monospace"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="3dp"
+            android:background="@color/purple"/>
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -23,25 +23,25 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         setTitle("dPlug");
+
         final Spinner spinner = findViewById(R.id.spinner);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                String keyWord="";
+                String keyWord;
                 if(spinner.getSelectedItem().equals("NO CATEGORY SELECTED")){
                     Toast.makeText(getApplicationContext(), "Please select a category from the shop", Toast.LENGTH_LONG).show();
                 }
                 else if(spinner.getSelectedItem().equals("SNEAKERS")){
-                    keyWord="sneakers";
+                    String product=spinner.getSelectedItem().toString();
                     Intent intent = new Intent(MainActivity.this,Shop.class);
-                    intent.putExtra("kluc",keyWord);
+                    intent.putExtra("kluc",product);
                     startActivity(intent);
                 }
                 else if(spinner.getSelectedItem().equals("HOODIES")){
-                    keyWord="hoodies";
+                    String product=spinner.getSelectedItem().toString();
                     Intent intent = new Intent(MainActivity.this,Shop.class);
-                    intent.putExtra("kluc",keyWord);
-                    
+                    intent.putExtra("kluc",product);
                     startActivity(intent);
                 }
             }
