@@ -13,17 +13,57 @@ import java.util.ArrayList;
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ExampleViewHolder> {
     private ArrayList<ItemShop> mItemList;
+    private OnItemClickListener mListener;
+
+    public interface OnItemClickListener {
+        void onItemClick(int position);
+        void onDetailsClick(int position);
+
+    }
+
+    public void setOnItemClickListener(OnItemClickListener listener){
+        mListener=listener;
+    }
+
+
     public static class ExampleViewHolder extends RecyclerView.ViewHolder{
 
         public ImageView mImageView;
         public TextView mCena;
         public TextView mIme;
+        public TextView mDetails;
 
-        public ExampleViewHolder(@NonNull View itemView) {
+        public ExampleViewHolder(@NonNull View itemView, final OnItemClickListener listener) {
             super(itemView);
             mImageView=itemView.findViewById(R.id.img);
             mCena=itemView.findViewById(R.id.cena);
             mIme=itemView.findViewById(R.id.imeProdukt);
+            mDetails=itemView.findViewById(R.id.details);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(listener!= null){
+                        int position= getAdapterPosition();
+                        if(position != RecyclerView.NO_POSITION){
+                            listener.onItemClick(position);
+                        }
+                    }
+                }
+            });
+
+            mDetails.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if(listener!= null){
+                        int position= getAdapterPosition();
+                        if(position != RecyclerView.NO_POSITION){
+                            listener.onDetailsClick(position);
+                        }
+                    }
+
+                }
+            });
         }
     }
 
@@ -35,7 +75,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ExampleViewHolder> {
     @Override
     public ExampleViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_shop,parent,false);
-        ExampleViewHolder evh = new ExampleViewHolder(v);
+        ExampleViewHolder evh = new ExampleViewHolder(v,mListener);
         return evh;
     }
 
