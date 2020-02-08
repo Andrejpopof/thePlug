@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProductDetails"
+    android:background="@drawable/pozadina2">
+
+    <ImageView
+        android:id="@+id/slika"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/puma"
+        />
+    <TextView
+        android:id="@+id/naslov"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/slika"
+        android:background="@color/Gold"
+        android:text="Naslov"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="1.5dp"
+        android:layout_marginStart="1.5dp"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/purple"
+        android:fontFamily="monospace"/>
+    <TextView
+        android:id="@+id/cena"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/slika"
+        android:layout_below="@+id/naslov"
+        android:layout_marginTop="50dp"
+        android:textSize="30sp"
+        android:layout_marginEnd="1.5dp"
+        android:layout_marginStart="1.5dp"
+
+        android:background="@color/Gold"
+        android:text="CENA"
+        android:textColor="@color/purple"
+        android:textAlignment="center"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:id="@+id/notice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kopce"
+        android:text="NOTE: Please choose from one of the two checkboxes"
+        android:textColor="@color/Gold"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="15dp"
+        />
+
+    <TextView
+        android:id="@+id/izborBrojP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slika"
+        android:text="Please choose sneaker size (if you picked sneakers) :"
+        android:textColor="@color/Gold"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        />
+
+    <RadioGroup
+        android:id="@+id/brojPatika"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/izborBrojP"
+        android:orientation="horizontal"
+        android:background="@color/Gray"
+        android:layout_centerHorizontal="true"
+        >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="41"
+            android:layout_margin="4dp"
+            android:textColor="@color/Gold"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="42"
+            android:textColor="@color/Gold"
+            android:layout_margin="4dp"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="43"
+            android:layout_margin="4dp"
+            android:textColor="@color/Gold"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="44"
+            android:layout_margin="4dp"
+            android:textColor="@color/Gold"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="45"
+            android:layout_margin="4dp"
+            android:textColor="@color/Gold"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="46"
+            android:layout_margin="4dp"
+            android:textColor="@color/Gold"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/izborBrojD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/brojPatika"
+        android:layout_marginTop="15dp"
+        android:text="Please choose hoodie size (if you picked a hoodie) :"
+        android:textColor="@color/Gold"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+
+        />
+    <RadioGroup
+    android:id="@+id/brojDuks"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="3dp"
+    android:layout_below="@+id/izborBrojD"
+    android:orientation="horizontal"
+    android:background="@color/Gray"
+    android:layout_centerHorizontal="true"
+    >
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XS"
+        android:layout_margin="4dp"
+        android:textColor="@color/Gold"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="S"
+        android:textColor="@color/Gold"
+        android:layout_margin="4dp"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="M"
+        android:layout_margin="4dp"
+        android:textColor="@color/Gold"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="L"
+        android:layout_margin="4dp"
+        android:textColor="@color/Gold"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XL"
+        android:layout_margin="4dp"
+        android:textColor="@color/Gold"/>
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XXL"
+        android:layout_margin="4dp"
+        android:textColor="@color/Gold"/>
+</RadioGroup>
+
+    <Button
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:id="@+id/kopce"
+        android:background="@color/Gold"
+        android:text="Add to basket"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        android:textStyle="bold"
+        android:fontFamily="monospace"
+        android:layout_below="@id/brojDuks"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="orderSubmit"/>
+
+
+</RelativeLayout>
