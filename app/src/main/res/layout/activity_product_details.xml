@@ -84,41 +84,53 @@
         >
 
         <RadioButton
+            android:id="@+id/btn1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="41"
             android:layout_margin="4dp"
-            android:textColor="@color/Gold"/>
+            android:textColor="@color/Gold"
+            android:onClick="patikiBrojSelect"/>
         <RadioButton
+            android:id="@+id/btn2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="42"
             android:textColor="@color/Gold"
-            android:layout_margin="4dp"/>
+            android:layout_margin="4dp"
+            android:onClick="patikiBrojSelect"/>
         <RadioButton
+            android:id="@+id/btn3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="43"
             android:layout_margin="4dp"
-            android:textColor="@color/Gold"/>
+            android:textColor="@color/Gold"
+            android:onClick="patikiBrojSelect"/>
         <RadioButton
+            android:id="@+id/btn4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="44"
             android:layout_margin="4dp"
-            android:textColor="@color/Gold"/>
+            android:textColor="@color/Gold"
+            android:onClick="patikiBrojSelect"/>
         <RadioButton
+            android:id="@+id/btn5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="45"
             android:layout_margin="4dp"
-            android:textColor="@color/Gold"/>
+            android:textColor="@color/Gold"
+            android:onClick="patikiBrojSelect"/>
         <RadioButton
+            android:id="@+id/btn6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="46"
             android:layout_margin="4dp"
-            android:textColor="@color/Gold"/>
+            android:textColor="@color/Gold"
+            android:onClick="patikiBrojSelect"/>
     </RadioGroup>
 
     <TextView
@@ -146,41 +158,53 @@
     >
 
     <RadioButton
+        android:id="@+id/btnd1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="XS"
         android:layout_margin="4dp"
-        android:textColor="@color/Gold"/>
+        android:textColor="@color/Gold"
+        android:onClick="duksBrojSelect"/>
     <RadioButton
+        android:id="@+id/btnd2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="S"
         android:textColor="@color/Gold"
-        android:layout_margin="4dp"/>
+        android:layout_margin="4dp"
+        android:onClick="duksBrojSelect"/>
     <RadioButton
+        android:id="@+id/btnd3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="M"
         android:layout_margin="4dp"
-        android:textColor="@color/Gold"/>
+        android:textColor="@color/Gold"
+        android:onClick="duksBrojSelect"/>
     <RadioButton
+        android:id="@+id/btnd4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="L"
         android:layout_margin="4dp"
-        android:textColor="@color/Gold"/>
+        android:textColor="@color/Gold"
+        android:onClick="duksBrojSelect"/>
     <RadioButton
+        android:id="@+id/btnd5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="XL"
         android:layout_margin="4dp"
-        android:textColor="@color/Gold"/>
+        android:textColor="@color/Gold"
+        android:onClick="duksBrojSelect"/>
     <RadioButton
+        android:id="@+id/btnd6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="XXL"
         android:layout_margin="4dp"
-        android:textColor="@color/Gold"/>
+        android:textColor="@color/Gold"
+        android:onClick="duksBrojSelect"/>
 </RadioGroup>
 
     <Button

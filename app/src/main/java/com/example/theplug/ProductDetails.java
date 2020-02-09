@@ -34,4 +34,23 @@ public class ProductDetails extends AppCompatActivity {
     public void orderSubmit(View view) {
         Toast.makeText(this, "The product has been added to your basket", Toast.LENGTH_SHORT).show();
     }
+
+    public void patikiBrojSelect(View view) {
+        if(view.getId()==R.id.btn1){}
+        else if(view.getId()==R.id.btn2){}
+        else if(view.getId()==R.id.btn3){}
+        else if(view.getId()==R.id.btn4){}
+        else if(view.getId()==R.id.btn5){}
+        else if(view.getId()==R.id.btn6){}
+
+    }
+
+    public void duksBrojSelect(View view) {
+        if(view.getId()==R.id.btnd1){}
+        else if(view.getId()==R.id.btnd2){}
+        else if(view.getId()==R.id.btnd3){}
+        else if(view.getId()==R.id.btnd4){}
+        else if(view.getId()==R.id.btnd5){}
+        else if(view.getId()==R.id.btnd6){}
+    }
 }

@@ -21,11 +21,12 @@
         <activity
             android:name=".Profile"
             android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".ProductDetails"
-            android:parentActivityName=".Shop" />
+
         <activity
             android:name=".Shop"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ProductDetails"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SplashActivity"
