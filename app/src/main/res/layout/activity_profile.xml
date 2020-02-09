@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:orientation="vertical"
+    android:background="@drawable/pozadina2">
+    <TextClock
+        android:id="@+id/textClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:format12Hour="hh:mm:ss a"
+        android:textColor="@color/Gold"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/profileId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" PROFILE ID: #37762"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/textClock"
+        android:background="@color/Gold"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/purple"/>
+
+    <TextView
+        android:id="@+id/loyaltyPoints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=" LOYALTY POINTS: 1689 points"
+        android:textSize="20sp"
+        android:layout_below="@+id/profileId"
+        android:textStyle="bold"
+        android:background="@color/Gold"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/purple"/>
+
+
+    <TextView
+        android:id="@+id/notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please send us a picture of a bad quality product"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:background="@color/Gold"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/purple"
+        android:layout_below="@id/loyaltyPoints"/>
+
+
+    <TextView
+        android:id="@+id/qualityClaim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" QUALITY CLAIM : "
+        android:textSize="20sp"
+        android:layout_marginStart="10dp"
+        android:textStyle="bold"
+        android:background="@color/Gold"
+        android:layout_marginTop="50dp"
+        android:textColor="@color/purple"
+        android:layout_below="@id/notice"/>
+
+        <ImageButton
+            android:id="@+id/reklamacija"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_camera_alt_black_24dp"
+            android:background="@color/Gold"
+            android:layout_toEndOf="@+id/qualityClaim"
+            android:layout_marginTop="340dp"
+            android:layout_marginStart="30dp"
+            android:clickable="true"
+            android:onClick="takePhoto"
+            />
+    <ImageView
+        android:id="@+id/slika"
+        android:layout_width="150dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/reklamacija"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="30dp"
+        android:layout_below="@id/slika"
+        android:layout_marginStart="78dp"
+        android:text="SUBMIT"
+        android:background="@color/Gold"
+        android:textStyle="bold"
+        android:textSize="13sp"
+        android:onClick="submit"/>
+
+
+
+
+
+
+</RelativeLayout>

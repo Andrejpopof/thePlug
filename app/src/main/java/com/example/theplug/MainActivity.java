@@ -84,6 +84,11 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.settings) {
             return true;
         }
+        if(id == R.id.profile)
+        {
+            Intent intent = new Intent(this,Profile.class);
+            startActivity(intent);
+        }
 
         return super.onOptionsItemSelected(item);
     }
