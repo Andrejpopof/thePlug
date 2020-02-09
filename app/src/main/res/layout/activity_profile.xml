@@ -34,7 +34,7 @@
         android:id="@+id/loyaltyPoints"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=" LOYALTY POINTS: 1689 points"
+        android:text=" LOYALTY POINTS:          1689 points"
         android:textSize="20sp"
         android:layout_below="@+id/profileId"
         android:textStyle="bold"

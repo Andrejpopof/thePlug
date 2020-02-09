@@ -4,12 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Shop">
+    tools:context=".Shop"
+    android:background="@color/Gray">
+
+
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@+id/stop"
         android:padding="4dp"
         android:scrollbars="vertical"
         android:background="@drawable/pozadina2"/>
