@@ -34,6 +34,11 @@ public class Shop extends AppCompatActivity implements LoaderManager.LoaderCallb
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_shop);
 
+        if(getSupportLoaderManager().getLoader(0)!=null)
+        {
+            getSupportLoaderManager().initLoader(0,null,this);
+        }
+
         createList();
         buildRecyclerView();
 
