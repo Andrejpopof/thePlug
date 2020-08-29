@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.settings) {
-            return true;
+            Toast.makeText(this, "Clicked on settings", Toast.LENGTH_SHORT).show();
         }
         if(id == R.id.profile)
         {

@@ -12,8 +12,6 @@ public class music extends Service {
         String action=intent.getAction();
         if(action.equals("play"))
         {
-
-
             if(player!=null)
             {
                 player.stop();
