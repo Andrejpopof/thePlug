@@ -1,4 +1,4 @@
-package com.example.theplug;
+package com.example.theplug.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.example.theplug.R;
+import com.example.theplug.RecyclerView.ItemShop;
 
 public class ProductDetails extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package com.example.theplug;
+package com.example.theplug.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,6 +9,8 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import com.example.theplug.R;
 
 public class Profile extends AppCompatActivity {
     static final int REQUEST_IMAGE_CAPTURE = 1;

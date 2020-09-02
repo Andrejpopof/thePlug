@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
+    tools:context=".Activities.MainActivity"
     tools:showIn="@layout/activity_main"
     android:background="@drawable/pozadina2">
 
@@ -64,6 +64,26 @@
         android:background="@color/Gold"
         android:text="Stop Music"
         android:padding="5dp"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/alarmToggle"
+        android:text="Turn off/on notifications"
+        android:textColor="@color/DarkSalmon"
+        android:textSize="13dp"/>
+
+
+
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alarmToggle"
+        android:checked="false"
+        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"/>
 
 

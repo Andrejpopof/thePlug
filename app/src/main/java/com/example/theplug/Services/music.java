@@ -1,9 +1,11 @@
-package com.example.theplug;
+package com.example.theplug.Services;
 
 import android.app.Service;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.IBinder;
+
+import com.example.theplug.R;
 
 public class music extends Service {
     private MediaPlayer player;
@@ -18,7 +20,7 @@ public class music extends Service {
                 player.reset();
             }
 
-            player=MediaPlayer.create(this,R.raw.muzika);
+            player=MediaPlayer.create(this, R.raw.muzika);
             player.start();
 
         }

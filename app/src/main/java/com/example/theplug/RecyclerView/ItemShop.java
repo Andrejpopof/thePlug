@@ -1,4 +1,4 @@
-package com.example.theplug;
+package com.example.theplug.RecyclerView;
 
 import android.os.Parcel;
 import android.os.Parcelable;

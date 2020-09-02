@@ -1,4 +1,4 @@
-package com.example.theplug;
+package com.example.theplug.RecyclerView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -9,16 +9,14 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
 import android.widget.Toast;
 
-import java.io.ByteArrayOutputStream;
+import com.example.theplug.NetworkOperations.PostsLoader;
+import com.example.theplug.Activities.ProductDetails;
+import com.example.theplug.R;
+
 import java.util.ArrayList;
 
 public class Shop extends AppCompatActivity implements LoaderManager.LoaderCallbacks<String> {
@@ -54,9 +52,11 @@ public class Shop extends AppCompatActivity implements LoaderManager.LoaderCallb
 
          if(kluc.equals("SNEAKERS")) {
              Log.i(TAG3, "Se povikuva restart Loader");
-             getSupportLoaderManager().restartLoader(0, null, this);
+             Bundle queryBundle = new Bundle();
+             queryBundle.putString("queryString","SNEAKERS");
+             getSupportLoaderManager().restartLoader(0, queryBundle, this);
 
-           /*lista.add(new ItemShop(R.drawable.air_jordan_4, "200 EURO", "Air Jordan 4"));
+            /*mlista.add(new ItemShop(R.drawable.air_jordan_4, "200 EURO", "Air Jordan 4"));
             mlista.add(new ItemShop(R.drawable.air_max_720_obj, "230 EURO", "Air Max 720 OBJ"));
             mlista.add(new ItemShop(R.drawable.reebok_dmx_trial_shadow, "180 EURO", "Nike React"));
             mlista.add(new ItemShop(R.drawable.yeezy_500, "400 EURO ", "Yeezy 500"));
@@ -64,7 +64,11 @@ public class Shop extends AppCompatActivity implements LoaderManager.LoaderCallb
             mlista.add(new ItemShop(R.drawable.nike_react_wmns, "145 EURO", "Nike React"));*/
         }
         else if (kluc.equals("HOODIES"))
-        {
+         {
+             Bundle queryBundle = new Bundle();
+             queryBundle.putString("queryString","HOODIES");
+             getSupportLoaderManager().restartLoader(0, queryBundle, this);
+
             /*mlista.add(new ItemShop(R.drawable.saint_laurent,"550 EURO","Saint Laurent"));
             mlista.add(new ItemShop(R.drawable.fazexchampion,"140 EURO","FaZeXChampion"));
             mlista.add(new ItemShop(R.drawable.fear_of_god,"470 EURO","Fear Of God"));
@@ -96,7 +100,7 @@ public class Shop extends AppCompatActivity implements LoaderManager.LoaderCallb
             @Override
             public void onDetailsClick(int position) {
                 Toast.makeText(Shop.this, "Opening details", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(Shop.this,ProductDetails.class);
+                Intent intent = new Intent(Shop.this, ProductDetails.class);
                 intent.putExtra("Item",mlista.get(position));
                 startActivity(intent);
 
@@ -107,12 +111,12 @@ public class Shop extends AppCompatActivity implements LoaderManager.LoaderCallb
     @NonNull
     @Override
     public Loader<String> onCreateLoader(int id, @Nullable Bundle args) {
-        return new PostsLoader(this);
+        return new PostsLoader(this,args.getString("queryString"));
     }
 
     @Override
     public void onLoadFinished(@NonNull Loader<String> loader, String data) {
-
+        //ODPAKUVAM JSON I JA POLNAM LISTATA ZA RECYCLER VIEW-TO
     }
 
     @Override

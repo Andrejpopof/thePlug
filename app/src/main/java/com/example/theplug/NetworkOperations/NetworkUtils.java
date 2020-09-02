@@ -1,4 +1,4 @@
-package com.example.theplug;
+package com.example.theplug.NetworkOperations;
 
 import android.net.Uri;
 import android.util.Log;
@@ -13,19 +13,19 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class NetworkUtils {
-    private static final String BASE_URL = "https://localhost:44332/posts";
+    private static final String BASE_URL_SNEAKERS = "https://10.0.2.2:44332/posts";
 
     public static final String TAG2 = "NETWORK UTILS: ";
 
-    public static String getPosts(){
-        Log.i(TAG2, "vo getPosts()");
+    public static String getPostsSneakers(){
+        Log.i(TAG2, "vo getPostsSneakers()");
         HttpURLConnection urlConnection = null;
         BufferedReader reader = null;
         String json = null;
 
         try {
 
-            Uri builtUri = Uri.parse(BASE_URL).buildUpon().build();
+            Uri builtUri = Uri.parse(BASE_URL_SNEAKERS).buildUpon().build();
             URL url = new URL(builtUri.toString());
             Log.i(TAG2, "URL: " + url);
 
@@ -74,5 +74,12 @@ public class NetworkUtils {
         Log.i(TAG2,"json: "+json);
         return json;
 
+    }
+
+    public static String getPostsHoodies()
+    {
+        Log.i(TAG2, "vo getPostsHoodies()");
+
+        return "asd";
     }
 }
