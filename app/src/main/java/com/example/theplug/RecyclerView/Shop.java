@@ -56,12 +56,12 @@ public class Shop extends AppCompatActivity implements LoaderManager.LoaderCallb
              queryBundle.putString("queryString","SNEAKERS");
              getSupportLoaderManager().restartLoader(0, queryBundle, this);
 
-            /*mlista.add(new ItemShop(R.drawable.air_jordan_4, "200 EURO", "Air Jordan 4"));
+            mlista.add(new ItemShop(R.drawable.air_jordan_4, "200 EURO", "Air Jordan 4"));
             mlista.add(new ItemShop(R.drawable.air_max_720_obj, "230 EURO", "Air Max 720 OBJ"));
             mlista.add(new ItemShop(R.drawable.reebok_dmx_trial_shadow, "180 EURO", "Nike React"));
             mlista.add(new ItemShop(R.drawable.yeezy_500, "400 EURO ", "Yeezy 500"));
             mlista.add(new ItemShop(R.drawable.yeezy_boost_700, "450 EURO", "Yeezy 700"));
-            mlista.add(new ItemShop(R.drawable.nike_react_wmns, "145 EURO", "Nike React"));*/
+            mlista.add(new ItemShop(R.drawable.nike_react_wmns, "145 EURO", "Nike React"));
         }
         else if (kluc.equals("HOODIES"))
          {
@@ -69,14 +69,14 @@ public class Shop extends AppCompatActivity implements LoaderManager.LoaderCallb
              queryBundle.putString("queryString","HOODIES");
              getSupportLoaderManager().restartLoader(0, queryBundle, this);
 
-            /*mlista.add(new ItemShop(R.drawable.saint_laurent,"550 EURO","Saint Laurent"));
+            mlista.add(new ItemShop(R.drawable.saint_laurent,"550 EURO","Saint Laurent"));
             mlista.add(new ItemShop(R.drawable.fazexchampion,"140 EURO","FaZeXChampion"));
             mlista.add(new ItemShop(R.drawable.fear_of_god,"470 EURO","Fear Of God"));
             mlista.add(new ItemShop(R.drawable.off_white_virgil,"520 EURO","Off-White c/o Virgil"));
             mlista.add(new ItemShop(R.drawable.puma,"100 EURO","Puma luxTG"));
             mlista.add(new ItemShop(R.drawable.honor_the_gift,"105 EURO","Honor The Guft Paradise"));
             mlista.add(new ItemShop(R.drawable.ovo,"160 EURO","OVO Classic Hoodie"));
-            mlista.add(new ItemShop(R.drawable.fnc,"95 EURO","ChampionXFnatic"));*/
+            mlista.add(new ItemShop(R.drawable.fnc,"95 EURO","ChampionXFnatic"));
         }
     }
 

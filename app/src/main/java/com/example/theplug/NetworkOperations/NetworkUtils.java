@@ -78,8 +78,61 @@ public class NetworkUtils {
 
     public static String getPostsHoodies()
     {
-        Log.i(TAG2, "vo getPostsHoodies()");
+        Log.i(TAG2, "vo getPostsSneakers()");
+        HttpURLConnection urlConnection = null;
+        BufferedReader reader = null;
+        String json = null;
 
-        return "asd";
+        try {
+
+            Uri builtUri = Uri.parse(BASE_URL_SNEAKERS).buildUpon().build();
+            URL url = new URL(builtUri.toString());
+            Log.i(TAG2, "URL: " + url);
+
+
+            urlConnection = (HttpURLConnection) url.openConnection();
+            urlConnection.setRequestMethod("GET");
+            urlConnection.connect();
+
+
+            InputStream inputStream = urlConnection.getInputStream();
+
+
+            StringBuilder builder = new StringBuilder();
+
+            reader = new BufferedReader(new InputStreamReader(inputStream));
+
+            String line;
+            while ((line = reader.readLine()) != null) {
+                builder.append(line + "\n");
+            }
+
+            if (builder.length() == 0) {
+
+                return null;
+            }
+            json = builder.toString();
+
+            // Catch errors.
+        } catch (IOException e) {
+            e.printStackTrace();
+
+            // Close the connections.
+        } finally {
+            if (urlConnection != null) {
+                urlConnection.disconnect();
+            }
+            if (reader != null) {
+                try {
+                    reader.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+            }
+        }
+        Log.i(TAG2,"json: "+json);
+        return json;
+
     }
 }
